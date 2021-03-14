@@ -1,0 +1,19 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $main-color
+    padding-bottom: 25px
+    &__logo
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__img
+        width: 120px
+        margin-right: 25px
+
+@media (max-width: 1024px)
+    .header
+        font-size: 10px
+        &__img
+            width: 80px
