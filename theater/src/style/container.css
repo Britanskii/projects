@@ -1,0 +1,6 @@
+@media (min-width: 1199.98px) {
+  .header, .slider-bg, .performance, .news, .news__main, .footer {
+    padding: 0 calc(50vw - 690px);
+  }
+}
+/*# sourceMappingURL=container.css.map */

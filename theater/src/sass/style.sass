@@ -1,0 +1,263 @@
+
+$main-color: #32221a
+$second-color: #f7d9ca
+$btn-color: #c28465
+$btn-active-color: #865d49
+
+body
+    background-color: $second-color
+    font-family: 'Prata', serif
+    font-size: 18px
+    color: #fff
+    position: relative
+    &::selection
+        color: $second-color
+        background-color: $btn-color
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $main-color
+    padding-bottom: 25px
+
+.header__logo
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header__img
+    width: 120px
+    margin-right: 25px
+
+.slider-bg
+    background: linear-gradient(to bottom left, $main-color 50%, $second-color 50%)
+
+.slider
+    position: relative
+    margin: 0 auto
+    overflow: hidden
+    width: 100%
+    height: 750px
+    text-shadow: 1px 1px 2px black
+
+.slider__wrapper
+    transition: all .5s
+    display: flex
+    width: 100%
+    height: inherit
+
+.slider__item
+    width: 100%
+    height: inherit
+    background-size: cover
+
+.slider__block
+    margin-top: 390px
+    margin-left: 50px
+
+.slider__title
+    text-transform: uppercase
+    font-size: 60px
+
+.slider__subtitle
+    font-size: 32px
+
+.slider_buy
+    font-size: 32px
+
+.slider__click
+    position: absolute
+    width: 100%
+    height: 100%
+
+.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $btn-color
+    width: 180px
+    height: 50px
+    font-size: 18px
+
+.slider__btn
+    width: 200px
+    height: 60px
+    font-size: 28px
+
+.slider
+    &__btn:hover
+        background-color: #fff
+        color: $btn-color
+
+.performance
+    padding-top: 50px
+    &__title
+
+.performance__wrapper
+    margin-top: 50px
+    display: grid
+    grid-template-columns: 32% 32% 32%
+    grid-template-rows: 320px 320px
+    grid-row-gap: 15px
+    justify-content: space-between
+
+.title
+    color: black
+    font-size: 28px
+
+.performance__item
+    position: relative
+    text-align: center
+    background-position-x: 50%
+    background-position-y: 25%
+    background-size: 200%
+    &:first-child
+        grid-row-start: 1
+        grid-row-end: 3
+        background-position-x: 35%
+        background-size: cover
+        .performance__name
+            font-size: 28px
+            margin-top: 300px
+
+.performance__date
+    margin-top: 25px
+
+.performance__name
+    font-size: 28px
+    margin-top: 135px
+
+.performance__desc
+    margin: 0 auto
+    width: 90%
+    margin-top: 25px
+
+.performance__btn
+    font-size: 18px
+    position: absolute
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+    &:hover
+        color: $btn-color
+        background-color: #fff
+
+.news
+    margin-top: 50px
+    color: #000
+    padding-bottom: 100px
+    background: linear-gradient(to bottom left, $second-color 50%, $main-color 50%)
+    &__item
+        width: 49%
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        &:nth-child(3)
+            color: #fff
+            .news__btn
+                color: #fff
+                background-color: $main-color
+                &:hover
+                    color: $main-color
+                    background-color: #fff
+
+    &__img
+        width: 35%
+        height: 240px
+        background: $btn-color
+    &__wrapper
+        width: 60%
+        margin-left: 20px
+    &__container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__date
+        font-size: 14px
+    &__title
+        font-size: 21px
+    &__btn
+        color: $main-color
+        margin-top: 10px
+        background-color: $second-color
+        border: 2px solid $btn-color
+        width: 178px
+        height: 48px
+        &:hover
+            background-color: #fff
+
+.footer
+    position: relative
+    background-color: $main-color
+    height: 950px
+    background-image: url('../res/img/footer/footer.png')
+    background-position-x: 50%
+    background-repeat: no-repeat
+    padding-top: 50px
+    background-size: cover
+    &__container
+        position: relative
+        font-size: 26px
+        display: block
+        margin: 0 auto
+        margin-top: 225px
+        width: 80%
+        height: 80px
+    &__search
+        position: relative
+        text-align: center
+        outline: none
+        border: none
+        width: 100%
+        height: 100%
+        background: transparent
+        color: white
+        &::placeholder
+            color: white
+    &__back
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #fff
+        opacity: .3
+    &__title
+        text-align: center
+        font-size: 65px
+        margin-top: 75px
+
+.sub-footer
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 140px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    &__back
+        position: absolute
+        background: #000
+        width: 100%
+        height: 100%
+        opacity: .3
+    &__item
+        position: relative
+    &__icons
+        display: flex
+        position: relative
+    &__icon
+        margin-right: 15px
+        width: 30px
+        height: 30px
+        background-color: #fff
+
+a
+    color: white
+    text-decoration: none
+    transition: all .2s
+    &:hover
+        color: $btn-color
+    &:active
+        color: $btn-active-color
