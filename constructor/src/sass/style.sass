@@ -1,0 +1,133 @@
+$black: #000
+$red: #dd0000
+$white: #fff
+
+body
+    background: $black
+
+.constructor
+    font-family: 'Montserrat'
+    margin: 0 auto
+    width: 800px
+    height: 500px
+    color: #fff
+    &__title
+        font-size: 26px
+        font-family: 'Furore'
+        text-align: center
+    &__subtitle
+        font-size: 18px
+    &__wrapper
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        height: inherit
+    &__images
+        margin-top: 10px
+        display: flex
+        & > *
+            width: 80px
+            margin-right: 30px
+    &__bg
+        width: 55%
+        height: inherit
+        background-image: url('../img/1.png')
+        background-size: cover
+
+    &__text
+        font-style: italic
+        text-align: center
+        margin-top: 100px
+        font-size: 36px
+        color: #fffb00
+        text-shadow: 0 0 30px #fffb00
+    &__settings
+        height: inherit
+        font-family: 'Montserrat'
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 40%
+    &__input
+        font-family: 'Montserrat'
+        text-align: center
+        padding: 20px 0
+        border: solid $red 2px
+        border-radius: 5px
+        background-color: $black
+        color: $white
+        &::placeholder
+            bac
+            font-family: 'Montserrat'
+            text-align: center
+    &__choise
+        display: flex
+        flex-wrap: wrap
+        padding: 10px
+        border: solid $red 2px
+        border-radius: 5px
+        & > *
+            margin: 3px
+            margin-right: 20px
+    &__size
+        display: flex
+        justify-content: space-between
+        & > *
+            padding: 10px
+            border: solid $red 2px
+            border-radius: 5px
+            text-align: center
+            width: fit-content
+    &__select
+        font-family: 'Montserrat'
+        padding: 10px
+        border: solid $red 2px
+        border-radius: 5px
+        width: 50%
+        color: $white
+        background-color: $black
+    &__buy
+        margin-top: 20px
+        font-size: 12px
+        font-family: 'Montserrat'
+        padding: 10px
+        border: none
+        border-radius: 5px
+        background-color: $black
+        color: $white
+        padding: 11px 0
+        width: 50%
+        background: linear-gradient(73deg, rgba(2,0,36,1) 0%, #e81a13 0%, #e87a13 100%)
+        box-shadow: 0 0 20px #e81a13
+    &__small
+        line-height: 23px
+        font-size: 12px
+    &__medium
+        line-height: 23px
+        font-size: 14px
+    &__big
+        line-height: 23px
+        font-size: 18px
+    &__bayshore
+        font-size: 25px
+        font-family: 'Bayshore'
+    &__belovedScript
+        font-family: 'Beloved Script'
+    &__beloved
+        font-size: 25px
+        font-family: 'Beloved'
+    &__furore
+        font-size: 20px
+        font-family: 'Furore'
+    &__muller
+        font-size: 20px
+        font-family: 'Muller'
+    &__neusa
+        font-size: 20px
+        font-family: 'Neusa'
+    &__rocket
+        font-size: 11px
+        font-family: 'Rocket Clouds'
+    &__sebastian
+        font-size: 20px
+        font-family: 'Sebastian'
