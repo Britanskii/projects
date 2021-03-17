@@ -1,18 +1,21 @@
-.performance
-    padding-bottom: 100px
-    &__wrapper
-        grid-template-rows: 320px 320px 320px 320px
-    &__item
-        &:last-child
-            background: black
-            grid-row-start: 3
-            grid-row-end: 5
-            grid-column-start: 3
-            grid-column-end: 4
-            background-position-x: 35%
-            background-size: cover
-            .performance__name
-                font-size: 28px
-                margin-top: 300px
-.footer
-    background-position-y: 50px
+// Base styles
+@import "base/_varabiles.sass"
+@import "base/_body.sass"
+@import "base/_container.sass"
+@import "base/_link.sass"
+
+// Elements styles
+@import "elements/_btn.sass"
+@import "elements/_slider.sass"
+@import "elements/_title.sass"
+@import "elements/_menu.sass"
+@import "elements/_title"
+@import "elements/_header.sass"
+@import "elements/_footer.sass"
+@import "elements/_sub-footer.sass"
+
+// Blocks styles
+@import "blocks/performance/_performance.sass"
+
+// Elements media
+@import "elements/_gradient.sass"
