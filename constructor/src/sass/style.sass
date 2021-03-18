@@ -26,20 +26,22 @@ body
         display: flex
         & > *
             width: 80px
+            height: 80px
             margin-right: 30px
     &__bg
         width: 55%
+        padding: 0 10px
         height: inherit
-        background-image: url('../img/1.png')
+        background-image: url('../img/3.png')
         background-size: cover
-
     &__text
         font-style: italic
         text-align: center
         margin-top: 100px
         font-size: 36px
-        color: #fe5a61
-        text-shadow: 0 0 30px #fe5a61
+        color: #fff
+        text-shadow: 0 0 30px #FF2200, 0 0 30px #FF2200
+        word-break: break-word
     &__settings
         height: inherit
         font-family: 'Montserrat'
@@ -60,7 +62,7 @@ body
             bac
             font-family: 'Montserrat'
             text-align: center
-    &__choise
+    &__cyrillic, &__latin
         display: flex
         flex-wrap: wrap
         padding: 10px
@@ -78,7 +80,8 @@ body
             border-radius: 5px
             text-align: center
             width: fit-content
-    &__select
+            cursor: pointer
+    &__select, &__fontSelect
         font-family: 'Montserrat'
         padding: 10px
         border: solid $border-color 2px
@@ -87,6 +90,19 @@ body
         color: $white
         outline: none
         background-color: $black
+    &__fontSelect
+        width: inherit
+    &__latin
+        display: none
+        & > *
+            cursor: pointer
+    &__cyrillic
+        & > *
+            cursor: pointer
+    &__fonts
+        align-items: center
+        display: flex
+        justify-content: space-between
     &__buy
         margin-top: 20px
         font-size: 12px
@@ -133,3 +149,11 @@ body
     &__sebastian
         font-size: 20px
         font-family: 'Sebastian'
+    &__neontubes
+        font-family: 'NeonTubes'
+    &__moscowmetro
+        font-family: 'moscowmetro'
+    &__brewery
+        font-family: 'brewery'
+    &__barcelony
+        font-family: 'barcelony'
