@@ -15,7 +15,7 @@ const fonts = document.querySelectorAll('.constructor__cyrillic *, .constructor_
 
 
 fonts.forEach(font => {
-    font.addEventListener('change', () => {
+    font.addEventListener('click', () => {
         text.style.fontFamily = font.innerHTML;
     });
 });
@@ -38,7 +38,7 @@ sizes.forEach(size => {
     });
 });
 
-lang.addEventListener('click', () => {
+lang.addEventListener('change', () => {
     if (!lang.options.selectedIndex) {
         latin.style.display = 'none'
         cyrillic.style.display = 'flex'
@@ -49,9 +49,8 @@ lang.addEventListener('click', () => {
 });
 
 select.addEventListener('click', () => {
-    text.style.textShadow = `0 0 30px ${colors[select.options.selectedIndex].value}, 0 0 30px ${colors[select.options.selectedIndex].value}`;
+    text.style.textShadow = `0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 30px ${colors[select.options.selectedIndex].value}, 0 0 30px ${colors[select.options.selectedIndex].value}`;
 });
-
 input.addEventListener('keyup', () => {
     text.innerText = input.value
 })
