@@ -38,7 +38,7 @@ sizes.forEach(size => {
     });
 });
 
-lang.addEventListener('click', () => {
+lang.addEventListener('change', () => {
     if (!lang.options.selectedIndex) {
         latin.style.display = 'none'
         cyrillic.style.display = 'flex'

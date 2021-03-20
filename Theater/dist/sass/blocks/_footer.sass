@@ -1,0 +1,74 @@
+
+.footer
+    position: relative
+    background-color: $main-color
+    height: 950px
+    background-image: url('../res/img/footer/footer.png')
+    background-position-x: 50%
+    background-repeat: no-repeat
+    padding-top: 50px
+    background-size: cover
+    &__container
+        position: relative
+        font-size: 26px
+        display: block
+        margin: 0 auto
+        margin-top: 225px
+        width: 80%
+        height: 80px
+    &__search
+        position: relative
+        text-align: center
+        outline: none
+        border: none
+        width: 100%
+        height: 100%
+        background: transparent
+        color: white
+        &::placeholder
+            color: white
+    &__back
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #fff
+        opacity: .3
+    &__title
+        text-align: center
+        font-size: 65px
+        margin-top: 75px
+
+@media (max-width: 1400px)
+    .footer
+        &__container
+            width: 100%
+
+@media (max-width: 1024px)
+    .footer
+        height: 470px
+        &__title
+            margin-top: 40px
+            font-size: 40px
+        &__container
+            height: 60px
+            margin-top: 90px
+        &__search
+            font-size: 18px
+
+@media (max-width: 610px)
+    .footer
+        height: 400px
+        &__container
+            height: 45px
+            font-size: 16px
+        &__title
+            font-size: 26px
+
+@media (max-width: 460px)
+    .footer
+        &__container
+            margin-top: 60px
+        &__title
+            font-size: 20px

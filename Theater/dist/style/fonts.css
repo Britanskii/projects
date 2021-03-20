@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Stalin';
+	src: url('../fonts/Stalin.eot');
+	src: local('☺'), url('../fonts/Stalin.woff') format('woff'), url('../fonts/Stalin.ttf') format('truetype'), url('../fonts/Stalin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

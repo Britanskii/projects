@@ -1,0 +1,98 @@
+.slider
+    position: relative
+    margin: 0 auto
+    overflow: hidden
+    width: 100%
+    height: 750px
+    text-shadow: 1px 1px 2px black
+    &__wrapper
+        transition: all .5s
+        display: flex
+        width: 100%
+        height: inherit
+    &__item
+        width: 100%
+        height: inherit
+        background-size: cover
+    &__block
+        margin-top: 390px
+        margin-left: 50px
+    &__title
+        text-transform: uppercase
+        font-size: 60px
+    &__subtitle
+        font-size: 32px
+    &__buy
+        margin-top: 20px
+        font-size: 32px
+    &__click
+        position: absolute
+        width: 100%
+        height: 100%
+    &__btn
+        margin-top: 20px
+        width: 200px
+        height: 60px
+        font-size: 28px
+    &__btn:hover
+        background-color: #fff
+        color: $btn-color
+
+@media (max-width: 1400px)
+    .slider
+        height: 600px
+        &__block
+            margin-top: 300px
+        &__buy
+            font-size: 24px
+@media (max-width: 1024px)
+    .slider
+        height: 500px
+        &__block
+            margin-top: 250px
+        &__title
+            font-size: 48px
+        &__subtitle
+            font-size: 24px
+
+@media (max-width: 800px)
+    .slider
+        height: 400px
+        &__block
+            margin-top: 175px
+        &__title
+            font-size: 28px
+        &__subtitle
+            font-size: 18px
+        &__btn
+            width: 180px
+            height: 50px
+            font-size: 22px
+        &__buy
+            font-size: 18px
+
+@media (max-width: 610px)
+    .slider
+        height: 300px
+        &__block
+            margin-top: 140px
+        &__title
+            font-size: 22px
+        &__subtitle
+            font-size: 14px
+        &__btn
+            width: 120px
+            height: 30px
+            font-size: 14px
+            margin-top: 10px
+        &__buy
+            margin-top: 10px
+
+@media (max-width: 460px)
+    .slider
+        height: 200px
+        &__block
+            margin-top: 80px
+            margin-left: 25px
+        &__buy
+            font-size: 10px
