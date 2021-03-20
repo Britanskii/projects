@@ -49,7 +49,7 @@ lang.addEventListener('change', () => {
 });
 
 select.addEventListener('click', () => {
-    text.style.textShadow = `0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 40px ${colors[select.options.selectedIndex].value}, 0 0 40px ${colors[select.options.selectedIndex].value}`;
+    text.style.textShadow = `0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 6px ${colors[select.options.selectedIndex].value}, 0 0 6px ${colors[select.options.selectedIndex].value}, 0 0 40px ${colors[select.options.selectedIndex].value}, 0 0 40px ${colors[select.options.selectedIndex].value}, 0 0 30px ${colors[select.options.selectedIndex].value}`;
 });
 input.addEventListener('keyup', () => {
     text.innerText = input.value
