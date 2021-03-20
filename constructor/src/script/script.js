@@ -15,7 +15,7 @@ const fonts = document.querySelectorAll('.constructor__cyrillic *, .constructor_
 
 
 fonts.forEach(font => {
-    font.addEventListener('change', () => {
+    font.addEventListener('click', () => {
         text.style.fontFamily = font.innerHTML;
     });
 });
