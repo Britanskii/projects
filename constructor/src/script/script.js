@@ -16,7 +16,17 @@ const fonts = document.querySelectorAll('.constructor__cyrillic *, .constructor_
 
 fonts.forEach(font => {
     font.addEventListener('click', () => {
-        text.style.fontFamily = font.innerHTML;
+        text.style.fontFamily = font.innerText;
+        if (font.getAttribute('data-size') === 'small') {
+            bg.style.fontSize = '2em'
+        } else if (font.getAttribute('data-size') === 'medium') {
+            bg.style.fontSize = '1.5em'
+        } else if (font.getAttribute('data-size') === 'big') {
+            bg.style.fontSize = '0.7em'
+        } else {
+            bg.style.fontSize = '1em'
+        }
+
     });
 });
 
@@ -29,11 +39,11 @@ images.forEach(img => {
 sizes.forEach(size => {
     size.addEventListener('click', () => {
         if (size.classList.value.includes('small')) {
-            text.style.fontSize = '28px';
+            text.style.fontSize = '1.8em';
         } else if (size.classList.value.includes('medium')) {
-            text.style.fontSize = '36px';
+            text.style.fontSize = '2.3em';
         } else if (size.classList.value.includes('big')) {
-            text.style.fontSize = '46px';
+            text.style.fontSize = '2.7em';
         }
     });
 });

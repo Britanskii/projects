@@ -1,2 +1,87 @@
 @font-face{font-family:'Sebastian';src:url("../fonts/sebastian.eot");src:local("☺"),url("../fonts/sebastian.woff") format("woff"),url("../fonts/sebastian.ttf") format("truetype"),url("../fonts/sebastian.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Rocket Clouds';src:url("../fonts/Rocket Clouds Alt.eot");src:local("☺"),url("../fonts/Rocket Clouds Alt.woff") format("woff"),url("../fonts/Rocket Clouds Alt.ttf") format("truetype"),url("../fonts/Rocket Clouds Alt.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Neusa';src:url("../fonts/Neusa-Medium.eot");src:local("☺"),url("../fonts/Neusa-Medium.woff") format("woff"),url("../fonts/Neusa-Medium.ttf") format("truetype"),url("../fonts/Neusa-Medium.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Muller';src:url("../fonts/Muller.eot");src:local("☺"),url("../fonts/Muller.woff") format("woff"),url("../fonts/Muller.ttf") format("truetype"),url("../fonts/Muller.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Montserrat';src:url("../fonts/Montserrat.eot");src:local("☺"),url("../fonts/Montserrat.woff") format("woff"),url("../fonts/Montserrat.ttf") format("truetype"),url("../fonts/Montserrat.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Beloved Script';src:url("../fonts/Beloved Script.eot");src:local("☺"),url("../fonts/Beloved Script.woff") format("woff"),url("../fonts/Beloved Script.ttf") format("truetype"),url("../fonts/Beloved Script.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Beloved';src:url("../fonts/beloved.eot");src:local("☺"),url("../fonts/beloved.woff") format("woff"),url("../fonts/beloved.ttf") format("truetype"),url("../fonts/beloved.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Bayshore';src:url("../fonts/Bayshore.eot");src:local("☺"),url("../fonts/Bayshore.woff") format("woff"),url("../fonts/Bayshore.ttf") format("truetype"),url("../fonts/Bayshore.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Furore';src:url("../fonts/furore.eot");src:local("☺"),url("../fonts/furore.woff") format("woff"),url("../fonts/furore.ttf") format("truetype"),url("../fonts/furore.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Barcelony';src:url("../fonts/Barcelony.eot");src:local("☺"),url("../fonts/Barcelony.woff") format("woff"),url("../fonts/Barcelony.ttf") format("truetype"),url("../fonts/Barcelony.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Brewery';src:url("../fonts/LocalBreweryTwo-Regular.eot");src:local("☺"),url("../fonts/LocalBreweryTwo-Regular.woff") format("woff"),url("../fonts/LocalBreweryTwo-Regular.ttf") format("truetype"),url("../fonts/LocalBreweryTwo-Regular.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'MoscowMetro';src:url("../fonts/MoscowMetro.eot");src:local("☺"),url("../fonts/MoscowMetro.woff") format("woff"),url("../fonts/MoscowMetro.ttf") format("truetype"),url("../fonts/MoscowMetro.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'NeonTubes';src:url("../fonts/NeonTubes2.eot");src:local("☺"),url("../fonts/NeonTubes2.woff") format("woff"),url("../fonts/NeonTubes2.ttf") format("truetype"),url("../fonts/NeonTubes2.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Alcotton';src:url("../fonts/Alcotton.eot");src:local("☺"),url("../fonts/Alcotton.woff") format("woff"),url("../fonts/Alcotton.ttf") format("truetype"),url("../fonts/Alcotton.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Apex';src:url("../fonts/Apex.eot");src:local("☺"),url("../fonts/Apex.woff") format("woff"),url("../fonts/Apex.ttf") format("truetype"),url("../fonts/Apex.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Gardens';src:url("../fonts/Gardens.eot");src:local("☺"),url("../fonts/Gardens.woff") format("woff"),url("../fonts/Gardens.ttf") format("truetype"),url("../fonts/Gardens.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Hamiltone';src:url("../fonts/Hamiltone.eot");src:local("☺"),url("../fonts/Hamiltone.woff") format("woff"),url("../fonts/Hamiltone.ttf") format("truetype"),url("../fonts/Hamiltone.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'Kiona';src:url("../fonts/Kiona.eot");src:local("☺"),url("../fonts/Kiona.woff") format("woff"),url("../fonts/Kiona.ttf") format("truetype"),url("../fonts/Kiona.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'MERITOCRACY';src:url("../fonts/MERITOCRACY.eot");src:local("☺"),url("../fonts/MERITOCRACY.woff") format("woff"),url("../fonts/MERITOCRACY.ttf") format("truetype"),url("../fonts/MERITOCRACY.svg") format("svg");font-weight:normal;font-style:normal}
-/*# sourceMappingURL=fonts.min.css.map */
+@font-face {
+    font-family: 'Lamon';
+    src: url('../fonts/ALSLamon-Regular.eot');
+    src: url('../fonts/ALSLamon-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ALSLamon-Regular.woff2') format('woff2'),
+        url('../fonts/ALSLamon-Regular.woff') format('woff'),
+        url('../fonts/ALSLamon-Regular.ttf') format('truetype'),
+        url('../fonts/ALSLamon-Regular.svg#ALSLamon-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neon';
+    src: url('../fonts/AANeon.eot');
+    src: url('../fonts/AANeon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AANeon.woff2') format('woff2'),
+        url('../fonts/AANeon.woff') format('woff'),
+        url('../fonts/AANeon.ttf') format('truetype'),
+        url('../fonts/AANeon.svg#AANeon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corinthia';
+    src: url('../fonts/Corinthia.eot');
+    src: url('../fonts/Corinthia.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Corinthia.woff2') format('woff2'),
+        url('../fonts/Corinthia.woff') format('woff'),
+        url('../fonts/Corinthia.ttf') format('truetype'),
+        url('../fonts/Corinthia.svg#Corinthia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volga';
+    src: url('../fonts/ALSIvolga.eot');
+    src: url('../fonts/ALSIvolga.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ALSIvolga.woff2') format('woff2'),
+        url('../fonts/ALSIvolga.woff') format('woff'),
+        url('../fonts/ALSIvolga.ttf') format('truetype'),
+        url('../fonts/ALSIvolga.svg#ALSIvolga') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avante';
+    src: url('../fonts/a_AvanteTitulInline.eot');
+    src: url('../fonts/a_AvanteTitulInline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/a_AvanteTitulInline.woff2') format('woff2'),
+        url('../fonts/a_AvanteTitulInline.woff') format('woff'),
+        url('../fonts/a_AvanteTitulInline.ttf') format('truetype'),
+        url('../fonts/a_AvanteTitulInline.svg#a_AvanteTitulInline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scripticus';
+    src: url('../fonts/ALSScripticus.eot');
+    src: url('../fonts/ALSScripticus.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ALSScripticus.woff2') format('woff2'),
+        url('../fonts/ALSScripticus.woff') format('woff'),
+        url('../fonts/ALSScripticus.ttf') format('truetype'),
+        url('../fonts/ALSScripticus.svg#ALSScripticus') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'EchoRevival';
+	src: url('../fonts/EchoRevival.eot');
+	src: local('☺'), url('../fonts/EchoRevival.woff') format('woff'), url('../fonts/EchoRevival.ttf') format('truetype'), url('../fonts/EchoRevival.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
