@@ -12,19 +12,17 @@ const fonts = document.querySelectorAll('.constructor__cyrillic *, .constructor_
     cyrillic = document.querySelector('.constructor__cyrillic'),
     latin = document.querySelector('.constructor__latin')
 
-
-
 fonts.forEach(font => {
     font.addEventListener('click', () => {
         text.style.fontFamily = font.innerText;
         if (font.getAttribute('data-size') === 'small') {
-            bg.style.fontSize = '2em'
+            bg.style.fontSize = '2.3em'
         } else if (font.getAttribute('data-size') === 'medium') {
-            bg.style.fontSize = '1.5em'
+            bg.style.fontSize = '1.8em'
         } else if (font.getAttribute('data-size') === 'big') {
-            bg.style.fontSize = '0.7em'
-        } else {
             bg.style.fontSize = '1em'
+        } else {
+            bg.style.fontSize = '1.3em'
         }
 
     });
@@ -63,4 +61,8 @@ select.addEventListener('click', () => {
 });
 input.addEventListener('keyup', () => {
     text.innerText = input.value
+    if (input.value.length <= 30) {
+        document.querySelector('.constructor__buy').href = `#order:${input.value}=1000`
+    }
+
 })
