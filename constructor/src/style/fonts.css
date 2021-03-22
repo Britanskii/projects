@@ -26,12 +26,13 @@
 
 @font-face{font-family:'Montserrat';src:url("../fonts/Montserrat.eot");src:local("☺"),url("../fonts/Montserrat.woff") format("woff"),url("../fonts/Montserrat.ttf") format("truetype"),url("../fonts/Montserrat.svg") format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'Furore';src:url("../fonts/furore.eot");src:local("☺"),url("../fonts/furore.woff") format("woff"),url("../fonts/furore.ttf") format("truetype"),url("../fonts/furore.svg") format("svg");font-weight:normal;font-style:normal}
+
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat.eot');
   src:  url('../fonts/Montserrat.woff2') format('woff2'),
       url('../fonts/Montserrat.woff') format('woff'),
-      url('../fonts/Montserrat.ttf') format('truetype'),
+      url('../fonts/Montserrat.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
