@@ -12,8 +12,6 @@ const fonts = document.querySelectorAll('.constructor__cyrillic *, .constructor_
     cyrillic = document.querySelector('.constructor__cyrillic'),
     latin = document.querySelector('.constructor__latin')
 
-
-
 fonts.forEach(font => {
     font.addEventListener('click', () => {
         text.style.fontFamily = font.innerText;
@@ -63,4 +61,8 @@ select.addEventListener('click', () => {
 });
 input.addEventListener('keyup', () => {
     text.innerText = input.value
+    if (input.value.length <= 30) {
+        document.querySelector('.constructor__buy').href = `#order:${input.value}=1000`
+    }
+
 })
