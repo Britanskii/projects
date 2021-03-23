@@ -156,17 +156,32 @@
 }
 
 @font-face {
-  font-family: 'Hamiltone';
-  src: url('../fonts/mr_HamiltoneG.eot');
-  src: url('../fonts/mr_HamiltoneG.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/mr_HamiltoneG.woff2') format('woff2'),
-      url('../fonts/mr_HamiltoneG.woff') format('woff'),
-      url('../fonts/mr_HamiltoneG.ttf') format('truetype'),
-      url('../fonts/mr_HamiltoneG.svg#mr_HamiltoneG') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Rocket Clouds';
+	src: url('../fonts/Rocket Clouds.eot');
+	src: local('☺'), url('../fonts/Rocket Clouds.woff') format('woff'), url('../fonts/Rocket Clouds.ttf') format('truetype'), url('../fonts/Rocket Clouds.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
+
+
+@font-face {
+	font-family: 'Hamiltone';
+	src: url('../fonts/Hamiltone.eot');
+	src: local('☺'), url('../fonts/Hamiltone.woff') format('woff'), url('../fonts/Hamiltone.ttf') format('truetype'), url('../fonts/Hamiltone.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neon Tubes';
+	src: url('../fonts/NeonTubes.eot');
+	src: local('☺'), url('../fonts/NeonTubes.woff') format('woff'), url('../fonts/NeonTubes.ttf') format('truetype'), url('../fonts/NeonTubes.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 
 @font-face {
