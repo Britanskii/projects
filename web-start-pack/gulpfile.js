@@ -1,57 +1,75 @@
 const gulp = require('gulp'),
-   browserSync = require('browser-sync'),
-   sass = require('gulp-sass'),
-   cleanCSS = require('gulp-clean-css'),
-   autoprefixer = require('gulp-autoprefixer'),
-   rename = require("gulp-rename"),
-   imagemin = require('gulp-imagemin'),
-   htmlmin = require('gulp-htmlmin');
+    watch = gulp.parallel(browserSync(params))
+// const browserSync = require('browser-sync');
+const sass = require('gulp-sass');
+const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
+const rename = require("gulp-rename");
+browsersync = require('browser-sync').create()
+let project_folder = 'dist',
+    source_folder = 'src',
+    { src, dest } = require('gulp'),
+    path = {
+        build: {
+            html: project_folder + "/",
+            css: project_folder + '/style/',
+            js: project_folder + '/script/',
+            img: project_folder + '/img/',
+            fonts: project_folder + '/fonts/',
+        },
+        src: {
+            html: source_folder + "/",
+            css: source_folder + '/sass/',
+            js: source_folder + '/script/',
+            img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+            fonts: source_folder + '/fonts/',
+        },
+        watch: {
+            html: source_folder + "/**/*.html",
+            css: source_folder + '/sass/**/*.sass',
+            js: source_folder + '/script/**/*.js',
+            img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
+        },
+        clean: "./" + project_folder + "/"
+    }
 
-gulp.task('server', function () {
+function browserSync() {
+    browsersync.init({
+        server: {
+            baseDir: './' + project_folder + '/'
+        },
+        port: 3000,
+        notify: false
+    })
+}
 
-   browserSync({
-      server: {
-         baseDir: "src"
-      }
-   });
+exports.watch = watch
+exports.default = watch
 
-   gulp.watch("src/*.html").on('change', browserSync.reload);
-});
 
-gulp.task('styles', function () {
-   return gulp.src("src/scss/**/*.+(scss|sass)")
-      .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-      .pipe(rename({ suffix: '.min', prefix: '' }))
-      .pipe(autoprefixer())
-      .pipe(cleanCSS({ compatibility: 'ie8' }))
-      .pipe(gulp.dest("src/css"))
-      .pipe(browserSync.stream());
-});
+// gulp.task('server', function () {
 
-gulp.task('watch', function () {
-   gulp.watch("src/scss/**/*.+(scss|sass|css)", gulp.parallel('styles'));
-   gulp.watch("src/*.html").on('change', gulp.parallel('html'));
-   gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
-   gulp.watch("src/image/**/*").on('all', gulp.parallel('images'));
-});
+//     browserSync({
+//         server: {
+//             baseDir: "src"
+//         }
+//     });
 
-gulp.task('html', function () {
-   return gulp.src("src/*.html")
-      .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest("dist/"));
-});
+//     gulp.watch("src/*.html").on('change', browserSync.reload);
+// });
 
-gulp.task('scripts', function () {
-   return gulp.src("src/js/**/*.js")
-      .pipe(gulp.dest("src/js"))
-      .pipe(browserSync.stream());
-});
+// gulp.task('styles', function () {
+//     return gulp.src("src/sass/**/*.+(scss|sass)")
+//         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+//         .pipe(rename({ suffix: '.min', prefix: '' }))
+//         .pipe(autoprefixer())
+//         .pipe(cleanCSS({ compatibility: 'ie8' }))
+//         .pipe(gulp.dest("src/style"))
+//         .pipe(browserSync.stream());
+// });
 
-gulp.task('images', function () {
-   return gulp.src("src/image/**/*")
-      .pipe(imagemin())
-      .pipe(gulp.dest("src/image"))
-      .pipe(browserSync.stream());
-});
+// gulp.task('watch', function () {
+//     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
+// })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'html', 'images'));
+// gulp.task('default', gulp.parallel('watch', 'server', 'styles'));

@@ -12,11 +12,19 @@ const fonts = document.querySelectorAll('.constructor__cyrillic *, .constructor_
     cyrillic = document.querySelector('.constructor__cyrillic'),
     latin = document.querySelector('.constructor__latin')
 
-
-
 fonts.forEach(font => {
     font.addEventListener('click', () => {
-        text.style.fontFamily = font.innerHTML;
+        text.style.fontFamily = font.innerText;
+        if (font.getAttribute('data-size') === 'small') {
+            bg.style.fontSize = '2.3em'
+        } else if (font.getAttribute('data-size') === 'medium') {
+            bg.style.fontSize = '1.8em'
+        } else if (font.getAttribute('data-size') === 'big') {
+            bg.style.fontSize = '1em'
+        } else {
+            bg.style.fontSize = '1.3em'
+        }
+
     });
 });
 
@@ -29,11 +37,11 @@ images.forEach(img => {
 sizes.forEach(size => {
     size.addEventListener('click', () => {
         if (size.classList.value.includes('small')) {
-            text.style.fontSize = '28px';
+            text.style.fontSize = '1.8em';
         } else if (size.classList.value.includes('medium')) {
-            text.style.fontSize = '36px';
+            text.style.fontSize = '2.3em';
         } else if (size.classList.value.includes('big')) {
-            text.style.fontSize = '46px';
+            text.style.fontSize = '2.7em';
         }
     });
 });
@@ -49,9 +57,12 @@ lang.addEventListener('change', () => {
 });
 
 select.addEventListener('click', () => {
-    text.style.textShadow = `0 0 30px ${colors[select.options.selectedIndex].value}, 0 0 30px ${colors[select.options.selectedIndex].value}`;
+    text.style.textShadow = `0 0 5px ${colors[select.options.selectedIndex].value}, 0 0 6px ${colors[select.options.selectedIndex].value}, 0 0 6px ${colors[select.options.selectedIndex].value}, 0 0 40px ${colors[select.options.selectedIndex].value}, 0 0 40px ${colors[select.options.selectedIndex].value}, 0 0 30px ${colors[select.options.selectedIndex].value}`;
 });
-
 input.addEventListener('keyup', () => {
     text.innerText = input.value
+    if (input.value.length <= 30) {
+        document.querySelector('.constructor__buy').href = `#order:${input.value}=1000`
+    }
+
 })

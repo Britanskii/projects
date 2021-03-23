@@ -1,0 +1,137 @@
+.performance
+    padding-top: 50px
+    &__wrapper
+        margin-top: 50px
+        display: grid
+        grid-template-columns: 32% 32% 32%
+        grid-template-rows: 320px 320px
+        grid-row-gap: 15px
+        justify-content: space-between
+    &__item
+        position: relative
+        text-align: center
+        background-position-x: 50%
+        background-position-y: 25%
+        background-size: 200%
+        &:first-child
+            grid-row-start: 1
+            grid-row-end: 3
+            background-position-x: 35%
+            background-size: cover
+            .performance__name
+                font-size: 28px
+                margin-top: 300px
+    &__date
+        margin-top: 25px
+    &__name
+        font-size: 28px
+        margin-top: 135px
+    &__desc
+        margin: 0 auto
+        width: 90%
+        margin-top: 25px
+    &__btn
+        position: absolute
+        bottom: 25px
+        left: 50%
+        transform: translateX(-50%)
+        &:hover
+            color: $btn-color
+            background-color: #fff
+
+@media (max-width: 1400px)
+    .performance
+        &__wrapper
+            grid-template-rows: 250px 250px
+        &__item
+            &:first-child
+                .performance__name
+                    margin-top: 190px
+        &__name
+            margin-top: 70px
+        &__desc
+            font-size: 14px
+
+@media (max-width: 1024px)
+    .performance
+        &__item
+            &:first-child
+                .performance__name
+                    margin-top: 225px
+                    font-size: 20px
+        &__date
+            font-size: 16px
+        &__name
+            font-size: 18px
+            margin-top: 80px
+        &__subname
+            font-size: 16px
+        &__desc
+            font-size: 12px
+
+@media (max-width: 800px)
+    .performance
+        &__wrapper
+            grid-template-columns: 20% 20% 20% 20%
+        &__date
+            margin-top: 10px
+            font-size: 14px
+        &__name
+            margin-top: 110px
+        &__item
+            &:last-child
+                display: none
+            &:nth-last-child(2)
+                display: none
+            &:first-child
+                grid-row-start: 1
+                grid-row-end: 2
+                grid-column-start: 1
+                grid-column-end: 5
+                .performance__name
+                    font-size: 18px
+                    margin-top: 60px
+                .performance__desc
+                    margin-top: 10px
+            &:nth-child(2)
+                grid-column-start: 1
+                grid-column-end: 3
+            &:nth-child(3)
+                grid-column-start: 3
+                grid-column-end: 5
+
+@media (max-width: 610px)
+    .performance
+        &__date
+            font-size: 12px
+        &__wrapper
+            grid-template-rows: 260px 220px
+        &__name
+            margin-top: 95px
+        &__subname
+            font-size: 14px
+
+@media (max-width: 460px)
+    .performance
+        padding-top: 25px
+        &__item
+            &:first-child
+                .performance__desc
+                    margin-top: 5px
+                    font-size: 10px
+                .performance__btn
+                    height: 30px
+        &__date
+            font-size: 10px
+        &__name
+            margin-top: 60px
+            font-size: 12px
+        &__subname
+            font-size: 10px
+        &__wrapper
+            margin-top: 25px
+            grid-template-rows: 230px 150px
+        &__title
+            text-align: center
+        &__btn
+            bottom: 15px
